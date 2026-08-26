@@ -1,0 +1,28 @@
+:root {
+  --grena: #431110;
+  --tijolo: #86201C;
+  --vermelho: #C11F22;
+  --grafite: #22201F;
+  --off: #FAF8F6;
+
+  --grafite-70: rgba(34, 32, 31, 0.7);
+  --grafite-45: rgba(34, 32, 31, 0.45);
+  --grafite-12: rgba(34, 32, 31, 0.12);
+  --grafite-08: rgba(34, 32, 31, 0.08);
+  --branco-24: rgba(255, 255, 255, 0.24);
+  --branco-09: rgba(255, 255, 255, 0.09);
+
+  --gap-1: 4px;
+  --gap-2: 8px;
+  --gap-3: 16px;
+  --gap-4: 24px;
+  --gap-5: 40px;
+  --gap-6: 64px;
+  --gap-7: 96px;
+  --largura-max: 1280px;
+
+  --escala-display: clamp(2.375rem, 5.5vw, 4rem);
+  --escala-titulo: clamp(1.75rem, 3.5vw, 2.625rem);
+  --escala-secao: 0.75rem;
+  --trilha-larga: 0.16em;
+}

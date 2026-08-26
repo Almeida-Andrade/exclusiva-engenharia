@@ -1,0 +1,123 @@
+.botao {
+  display: none;
+  position: relative;
+  z-index: 40;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.risco {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  background: currentColor;
+  transition: transform 260ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.risco:first-child {
+  top: 18px;
+}
+.risco:last-child {
+  bottom: 18px;
+}
+.risco:first-child[data-aberto='true'] {
+  transform: translateY(3px) rotate(45deg);
+}
+.risco:last-child[data-aberto='true'] {
+  transform: translateY(-3px) rotate(-45deg);
+}
+
+.botao[aria-expanded='true'] {
+  color: #fff;
+}
+
+.painel {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-5);
+  padding: var(--gap-6) var(--gap-5);
+  background: var(--grena);
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 240ms ease,
+    visibility 0s linear 240ms;
+}
+.painel[data-aberto='true'] {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 240ms ease;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nome {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--fonte-titulo);
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+.nome small {
+  font-family: var(--fonte-corpo);
+  font-size: 7.5px;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  color: var(--branco-24);
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-3);
+}
+
+.item {
+  font-family: var(--fonte-titulo);
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  opacity: 0.75;
+}
+.item[data-ativo='true'] {
+  opacity: 1;
+  color: #F2A9A4;
+}
+
+.acao {
+  margin-top: auto;
+  align-self: flex-start;
+  border: 1px solid var(--branco-24);
+  padding: 13px 26px;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 860px) {
+  .botao {
+    display: block;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .painel,
+  .risco {
+    transition: none;
+  }
+}

@@ -1,0 +1,124 @@
+.rodape {
+  margin-top: var(--gap-7);
+  background: var(--grena);
+  color: #fff;
+}
+
+.faixa {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: var(--gap-6);
+  max-width: var(--largura-max);
+  margin: 0 auto;
+  padding: var(--gap-6) var(--gap-5);
+}
+
+.nome {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--fonte-titulo);
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+.nome small {
+  font-family: var(--fonte-corpo);
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.26em;
+  color: var(--branco-24);
+}
+
+.lema {
+  margin-top: var(--gap-3);
+  max-width: 34ch;
+  font-size: 14px;
+  line-height: 1.7;
+  opacity: 0.7;
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-2);
+  font-size: 14px;
+}
+.coluna a {
+  opacity: 0.8;
+  transition: opacity 180ms ease;
+}
+.coluna a:hover {
+  opacity: 1;
+}
+
+.rotulo {
+  font-size: 10.5px;
+  letter-spacing: var(--trilha-larga);
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-bottom: var(--gap-1);
+}
+
+.redes {
+  display: flex;
+  gap: var(--gap-2);
+}
+
+.rede {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--branco-24);
+  transition:
+    background-color 200ms ease,
+    border-color 200ms ease;
+}
+.rede:hover {
+  background: var(--vermelho);
+  border-color: var(--vermelho);
+}
+
+.icone {
+  width: 17px;
+  height: 17px;
+}
+
+.sede {
+  margin-top: var(--gap-2);
+  font-size: 13px;
+  line-height: 1.7;
+  opacity: 0.7;
+}
+
+.base {
+  border-top: 1px solid var(--branco-09);
+}
+.base span {
+  display: block;
+  max-width: var(--largura-max);
+  margin: 0 auto;
+  padding: var(--gap-3) var(--gap-5);
+  font-size: 12px;
+  opacity: 0.55;
+}
+
+@media (max-width: 860px) {
+  .faixa {
+    grid-template-columns: 1fr;
+    gap: var(--gap-5);
+    padding: var(--gap-5) var(--gap-4);
+  }
+  .base span {
+    padding: var(--gap-3) var(--gap-4);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .coluna a,
+  .rede {
+    transition: none;
+  }
+}
