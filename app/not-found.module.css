@@ -1,0 +1,142 @@
+.pagina {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: var(--gap-6);
+  align-items: center;
+  max-width: var(--largura-max);
+  margin: 0 auto;
+  padding: var(--gap-6) var(--gap-5);
+  min-height: 60vh;
+}
+
+.kicker {
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--vermelho);
+  margin-bottom: var(--gap-2);
+}
+
+.titulo {
+  font-family: var(--fonte-titulo);
+  font-size: var(--escala-display);
+  font-weight: 650;
+  letter-spacing: -0.03em;
+  line-height: 1.06;
+  max-width: 16ch;
+}
+
+.texto {
+  margin-top: var(--gap-3);
+  max-width: 52ch;
+  color: var(--grafite-70);
+}
+
+.acoes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--gap-4);
+  margin-top: var(--gap-5);
+}
+
+.cta {
+  display: inline-block;
+  border: 1px solid var(--grafite);
+  padding: 13px 26px;
+  font-size: 12.5px;
+  letter-spacing: 0.08em;
+  transition:
+    background-color 200ms ease,
+    border-color 200ms ease,
+    color 200ms ease;
+}
+.cta:hover {
+  background: var(--vermelho);
+  border-color: var(--vermelho);
+  color: #fff;
+}
+
+.ctaLivre {
+  font-size: 13px;
+  color: var(--tijolo);
+}
+.ctaLivre:hover {
+  color: var(--vermelho);
+}
+
+.atalhos {
+  margin-top: var(--gap-6);
+  padding-top: var(--gap-4);
+  border-top: 1px solid var(--grafite-12);
+}
+
+.rotulo {
+  font-size: 10.5px;
+  letter-spacing: var(--trilha-larga);
+  text-transform: uppercase;
+  color: var(--grafite-45);
+}
+
+.atalhos ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-2) var(--gap-4);
+  margin: var(--gap-3) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.atalhos a {
+  font-size: 14.5px;
+  color: var(--grafite-70);
+}
+.atalhos a:hover {
+  color: var(--vermelho);
+}
+
+.bloco {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 420px;
+  padding: var(--gap-5);
+  background: linear-gradient(150deg, var(--grena) 0%, var(--tijolo) 130%);
+}
+
+.numero {
+  font-family: var(--fonte-titulo);
+  font-size: clamp(5rem, 12vw, 9rem);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.42);
+  font-variant-numeric: tabular-nums;
+}
+
+.legenda {
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 960px) {
+  .pagina {
+    grid-template-columns: 1fr;
+    gap: var(--gap-5);
+  }
+  .bloco {
+    min-height: 220px;
+    order: -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .pagina {
+    padding: var(--gap-5) var(--gap-4);
+  }
+  .bloco {
+    padding: var(--gap-4);
+  }
+}
