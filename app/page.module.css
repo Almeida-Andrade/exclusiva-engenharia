@@ -286,20 +286,7 @@
 }
 
 .marcas {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap-2) var(--gap-4);
-  margin: var(--gap-5) 0 0;
-  padding: 0;
-  list-style: none;
-}
-.marcas li {
-  padding: 10px 20px;
-  border: 1px solid var(--grafite-12);
-  background: #fff;
-  font-size: 13px;
-  letter-spacing: 0.04em;
-  color: var(--grafite-70);
+  margin-top: var(--gap-5);
 }
 
 .grupo {

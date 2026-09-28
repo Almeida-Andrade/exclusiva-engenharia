@@ -99,7 +99,7 @@ export const OBRAS: Obra[] = [
   {
     nome: 'Usinas Solares Canis 1, 2, 3 e 5',
     resumo:
-      '4 usinas solares em operação com 8.640 painéis fotovoltaicos e capacidade de geração de 6,2 MWh — energia para mais de 300 residências.',
+      '4 usinas solares em operação com 8.640 painéis fotovoltaicos e potência instalada de 6,2 MW — energia para mais de 300 residências.',
     cidade: 'Santa Inês (MA)',
     entrega: 'Em operação',
     ordem: 2024,
@@ -138,6 +138,7 @@ export const OBRAS: Obra[] = [
     ordem: 2021,
     area: '6.880 m²',
     segmento: 'comercial',
+    imagem: '/obras/center-valley.jpg',
     destaque: true,
   },
   {
@@ -149,6 +150,7 @@ export const OBRAS: Obra[] = [
     ordem: 2021,
     area: '3.305 m²',
     segmento: 'comercial',
+    imagem: '/obras/galeria-a.jpg',
   },
   {
     nome: 'Supermercado Mateus Pedreiras',
@@ -159,6 +161,7 @@ export const OBRAS: Obra[] = [
     ordem: 2018,
     area: '12.000 m²',
     segmento: 'comercial',
+    imagem: '/obras/mateus-pedreiras.jpg',
   },
   {
     nome: 'Residencial Búzios',
@@ -168,26 +171,29 @@ export const OBRAS: Obra[] = [
     entrega: 'Junho de 2017',
     ordem: 2017,
     segmento: 'residencial',
+    imagem: '/obras/buzios.jpg',
   },
   {
     nome: 'Centro Comercial Ana Diná',
     resumo: '13 lojas distribuídas em três pavimentos.',
-    local: 'Outeiro',
-    cidade: 'São José de Ribamar (MA)',
-    entrega: 'Junho de 2013',
-    ordem: 2013,
-    area: '2.635 m²',
-    segmento: 'comercial',
-  },
-  {
-    nome: 'Centro Comercial Olgamérica',
-    resumo: 'Centro comercial no Anjo da Guarda.',
     local: 'Av. dos Portugueses, Anjo da Guarda',
     cidade: 'São Luís (MA)',
     entrega: 'Junho de 2013',
     ordem: 2013,
+    area: '2.635 m²',
+    segmento: 'comercial',
+    imagem: '/obras/ana-dina.jpg',
+  },
+  {
+    nome: 'Centro Comercial Olgamérica',
+    resumo: 'Centro comercial no Centro de São José de Ribamar.',
+    local: 'Av. Gonçalves Dias, Centro',
+    cidade: 'São José de Ribamar (MA)',
+    entrega: 'Junho de 2013',
+    ordem: 2013,
     area: '1.516 m²',
     segmento: 'comercial',
+    imagem: '/obras/olgamerica.jpg',
   },
   {
     nome: 'Nova Sede CEI-COC',
@@ -198,6 +204,7 @@ export const OBRAS: Obra[] = [
     ordem: 2012,
     area: '1.800 m²',
     segmento: 'educacional',
+    imagem: '/obras/cei-coc-sede.jpg',
   },
   {
     nome: 'Nova Sede Yázigi Internacional',
@@ -208,6 +215,7 @@ export const OBRAS: Obra[] = [
     ordem: 2012,
     area: '550 m²',
     segmento: 'educacional',
+    imagem: '/obras/yazigi.jpg',
   },
   {
     nome: 'Loja Richards',
@@ -216,6 +224,7 @@ export const OBRAS: Obra[] = [
     entrega: 'Dezembro de 2011',
     ordem: 2011,
     segmento: 'comercial',
+    imagem: '/obras/loja-richards.jpg',
   },
   {
     nome: 'Loja Yoggi',
@@ -224,6 +233,7 @@ export const OBRAS: Obra[] = [
     entrega: 'Dezembro de 2011',
     ordem: 2011,
     segmento: 'comercial',
+    imagem: '/obras/loja-yoggi.jpg',
   },
   {
     nome: 'Prédio Comercial São Luís Rei de França',
@@ -234,6 +244,7 @@ export const OBRAS: Obra[] = [
     ordem: 2011,
     area: '1.344 m²',
     segmento: 'comercial',
+    imagem: '/obras/rei-de-franca.jpg',
   },
   {
     nome: 'Centro Comercial Pátio Brasil e Edifício Guarujá',
@@ -243,6 +254,7 @@ export const OBRAS: Obra[] = [
     entrega: '2011',
     ordem: 2011,
     segmento: 'comercial',
+    imagem: '/obras/patio-brasil.jpg',
   },
   {
     nome: 'Edifício San Gabriel',
@@ -264,6 +276,7 @@ export const OBRAS: Obra[] = [
     ordem: 2010,
     area: '12.000 m²',
     segmento: 'comercial',
+    imagem: '/obras/mateus-maiobao.jpg',
   },
   {
     nome: 'Centro Comercial Luminy Plaza',
@@ -273,6 +286,7 @@ export const OBRAS: Obra[] = [
     entrega: 'Dezembro de 2008',
     ordem: 2008,
     segmento: 'comercial',
+    imagem: '/obras/luminy-plaza.jpg',
   },
   {
     nome: 'Edifício Angra dos Reis',
@@ -282,15 +296,17 @@ export const OBRAS: Obra[] = [
     entrega: 'Junho de 2008',
     ordem: 2008,
     segmento: 'residencial',
+    imagem: '/obras/angra-dos-reis.jpg',
   },
   {
-    nome: 'Edifício Residencial Parati',
+    nome: 'Edifício Residencial Paraty',
     resumo: 'Residencial com 14 unidades, incorporação própria.',
     local: 'Sítio Leal, Filipinho',
     cidade: 'São Luís (MA)',
     entrega: 'Julho de 2008',
     ordem: 2008,
     segmento: 'residencial',
+    imagem: '/obras/paraty.jpg',
   },
   {
     nome: 'Hospital da Mulher — Ampliação',
@@ -302,6 +318,7 @@ export const OBRAS: Obra[] = [
     ordem: 2007,
     area: '6.137 m²',
     segmento: 'saude',
+    imagem: '/obras/hospital-da-mulher.jpg',
   },
   {
     nome: 'Gás Hospitalar — Hospital da Mulher',
@@ -311,6 +328,7 @@ export const OBRAS: Obra[] = [
     entrega: '2007',
     ordem: 2007,
     segmento: 'saude',
+    imagem: '/obras/hospital-da-mulher.jpg',
   },
   {
     nome: 'Maternidade Rural — Projetos',
@@ -339,6 +357,7 @@ export const OBRAS: Obra[] = [
     ordem: 2007,
     area: '1.080 m²',
     segmento: 'comercial',
+    imagem: '/obras/francisco-de-sousa-coelho.jpg',
   },
   {
     nome: 'CEI-COC — Ampliação',
@@ -350,6 +369,7 @@ export const OBRAS: Obra[] = [
     ordem: 2007,
     area: '1.800 m²',
     segmento: 'educacional',
+    imagem: '/obras/cei-coc-ampliacao.jpg',
   },
   {
     nome: 'Usina de Concreto Supermix',
@@ -360,6 +380,7 @@ export const OBRAS: Obra[] = [
     ordem: 2007,
     area: '2.600 m²',
     segmento: 'industrial',
+    imagem: '/obras/usina-supermix.jpg',
   },
   {
     nome: 'Condomínio Residencial Grand Trianon',
@@ -423,6 +444,7 @@ export const OBRAS: Obra[] = [
     entrega: '1999',
     ordem: 1999,
     segmento: 'educacional',
+    imagem: '/obras/colegio-batista.jpg',
   },
   {
     nome: 'Casas Residenciais Jardim Primavera',
@@ -451,6 +473,7 @@ export const OBRAS: Obra[] = [
     ordem: 1998,
     area: '28.000 m²',
     segmento: 'educacional',
+    imagem: '/obras/montessoriano.jpg',
     destaque: true,
   },
   {
@@ -461,6 +484,7 @@ export const OBRAS: Obra[] = [
     entrega: '1998',
     ordem: 1998,
     segmento: 'educacional',
+    imagem: '/obras/divina-pastora.jpg',
   },
   {
     nome: 'Galpões Editora FTD',
@@ -470,6 +494,7 @@ export const OBRAS: Obra[] = [
     entrega: '1998',
     ordem: 1998,
     segmento: 'industrial',
+    imagem: '/obras/editora-ftd.jpg',
   },
   {
     nome: 'Sede Administrativa Editora FTD',
@@ -479,6 +504,7 @@ export const OBRAS: Obra[] = [
     entrega: '1997',
     ordem: 1997,
     segmento: 'comercial',
+    imagem: '/obras/editora-ftd.jpg',
   },
   {
     nome: 'Complexo Industrial Mineradora Itamirim',
@@ -488,6 +514,7 @@ export const OBRAS: Obra[] = [
     entrega: '1996',
     ordem: 1996,
     segmento: 'industrial',
+    imagem: '/obras/mineradora-itamirim.jpg',
   },
   {
     nome: 'Urbanização e Pavimentação da Avenida Litorânea',
@@ -496,6 +523,7 @@ export const OBRAS: Obra[] = [
     entrega: '1993',
     ordem: 1993,
     segmento: 'infraestrutura',
+    imagem: '/obras/avenida-litoranea.jpg',
   },
   {
     nome: 'Gerência de Infraestrutura do Maranhão',
@@ -504,6 +532,7 @@ export const OBRAS: Obra[] = [
     entrega: '1991–1995',
     ordem: 1995,
     segmento: 'infraestrutura',
+    imagem: '/obras/gerencia-infraestrutura.jpg',
   },
   {
     nome: 'Secretaria Municipal de Educação de São Luís',
@@ -532,16 +561,22 @@ export const INCORPORACOES = [
   'Ipanema (projeto)',
 ]
 
-export const REFERENCIAS_NACIONAIS = [
-  'WEG do Brasil',
-  'Grupo Mateus',
-  'Selfit Academias',
-  'Caixa Econômica Federal',
-  'Pague Menos',
-  'Deca',
-  'Supermix Concreto',
-  'Eliane Revestimentos',
-  'Votorantim Cimentos',
+export interface Marca {
+  nome: string
+  arquivo: string
+  proporcao: number
+}
+
+export const REFERENCIAS_NACIONAIS: Marca[] = [
+  { nome: 'WEG do Brasil', arquivo: '/marcas/weg.svg', proporcao: 5991 / 4192 },
+  { nome: 'Grupo Mateus', arquivo: '/marcas/grupo-mateus.png', proporcao: 710 / 119 },
+  { nome: 'Selfit Academias', arquivo: '/marcas/selfit.svg', proporcao: 2.6 },
+  { nome: 'Caixa Econômica Federal', arquivo: '/marcas/caixa.svg', proporcao: 3.1 },
+  { nome: 'Pague Menos', arquivo: '/marcas/pague-menos.svg', proporcao: 2.9 },
+  { nome: 'Deca', arquivo: '/marcas/deca.png', proporcao: 768 / 214 },
+  { nome: 'Supermix Concreto', arquivo: '/marcas/supermix.png', proporcao: 180 / 48 },
+  { nome: 'Eliane Revestimentos', arquivo: '/marcas/eliane.png', proporcao: 768 / 206 },
+  { nome: 'Votorantim Cimentos', arquivo: '/marcas/votorantim.svg', proporcao: 500 / 120 },
 ]
 
 export function listarObras(segmento?: Segmento): Obra[] {
@@ -554,6 +589,6 @@ export function obterEstatisticas() {
     anos: new Date().getFullYear() - ANO_FUNDACAO,
     obras: OBRAS.length,
     metros: '100 mil m²',
-    energia: '6,2 MWh',
+    energia: '6,2 MW',
   }
 }

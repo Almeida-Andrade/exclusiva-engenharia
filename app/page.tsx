@@ -5,13 +5,9 @@ import { Cabecalho } from '@/components/site/Cabecalho'
 import { Rodape } from '@/components/site/Rodape'
 import { Revelar } from '@/components/site/Revelar'
 import { CardObra } from '@/components/site/CardObra'
+import { CarrosselMarcas } from '@/components/site/CarrosselMarcas'
 import { DadosEstruturados } from '@/components/site/DadosEstruturados'
-import {
-  listarObras,
-  obterEstatisticas,
-  REFERENCIAS_NACIONAIS,
-  SEGMENTOS,
-} from '@/lib/obras'
+import { listarObras, obterEstatisticas, SEGMENTOS } from '@/lib/obras'
 import { EMAIL, WHATSAPP } from '@/lib/site'
 import estilos from './page.module.css'
 
@@ -84,7 +80,7 @@ export default function Home() {
           </div>
           <div>
             <b>{estatisticas.energia}</b>
-            <small>De energia solar gerada</small>
+            <small>De potência solar instalada</small>
           </div>
         </section>
       </div>
@@ -173,8 +169,8 @@ export default function Home() {
                 <small>Painéis fotovoltaicos</small>
               </div>
               <div>
-                <b>6,2 MWh</b>
-                <small>Capacidade de geração</small>
+                <b>6,2 MW</b>
+                <small>Potência instalada</small>
               </div>
               <div>
                 <b>300+</b>
@@ -196,12 +192,8 @@ export default function Home() {
               </p>
             </Revelar>
 
-            <Revelar>
-              <ul className={estilos.marcas}>
-                {REFERENCIAS_NACIONAIS.map((marca) => (
-                  <li key={marca}>{marca}</li>
-                ))}
-              </ul>
+            <Revelar className={estilos.marcas}>
+              <CarrosselMarcas />
             </Revelar>
           </section>
 

@@ -1,0 +1,55 @@
+.trilho {
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+/* Desliza sempre, inclusive com "reduzir movimento" ativo: o movimento é lento,
+   contínuo e pausa ao passar o mouse. O !important vence o reset global. */
+.faixa {
+  display: flex;
+  width: max-content;
+  animation: desliza 60s linear infinite;
+  animation-duration: 60s !important;
+  animation-iteration-count: infinite !important;
+}
+.trilho:hover .faixa {
+  animation-play-state: paused;
+}
+
+.fita {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-6);
+  margin: 0;
+  padding: 0 calc(var(--gap-6) / 2);
+  list-style: none;
+}
+
+.item img {
+  height: 40px;
+  width: auto;
+  max-width: 190px;
+  object-fit: contain;
+  filter: grayscale(1);
+  opacity: 0.6;
+  transition: opacity 220ms ease;
+}
+.item img:hover {
+  opacity: 1;
+}
+
+@keyframes desliza {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 640px) {
+  .fita {
+    gap: var(--gap-5);
+  }
+  .item img {
+    height: 32px;
+    max-width: 150px;
+  }
+}

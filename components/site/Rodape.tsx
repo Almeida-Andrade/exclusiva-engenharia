@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { ITENS_NAVEGACAO } from '@/lib/navegacao'
-import { EMAIL, TELEFONE_1, TELEFONE_2, WHATSAPP } from '@/lib/site'
+import { EMAIL, TELEFONE, WHATSAPP } from '@/lib/site'
 import { IconeEmail, IconeWhatsApp } from './Icones'
 import estilos from './Rodape.module.css'
 
@@ -44,7 +44,7 @@ export function Rodape() {
           </div>
 
           <span className={estilos.sede}>
-            {TELEFONE_1} · {TELEFONE_2}
+            {TELEFONE}
             <br />
             {EMAIL}
           </span>

@@ -1,13 +1,7 @@
 import type { Metadata } from 'next'
 import { Cabecalho } from '@/components/site/Cabecalho'
 import { Rodape } from '@/components/site/Rodape'
-import {
-  EMAIL,
-  TELEFONE_1,
-  TELEFONE_2,
-  WHATSAPP,
-  WHATSAPP_2,
-} from '@/lib/site'
+import { EMAIL, TELEFONE, WHATSAPP } from '@/lib/site'
 import estilos from './page.module.css'
 
 const DESCRICAO =
@@ -41,19 +35,8 @@ export default function Contato() {
             rel="noopener noreferrer"
           >
             <span className={estilos.rotulo}>WhatsApp</span>
-            <b>{TELEFONE_1}</b>
+            <b>{TELEFONE}</b>
             <span className={estilos.dica}>Resposta mais rápida</span>
-          </a>
-
-          <a
-            className={estilos.canal}
-            href={WHATSAPP_2}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className={estilos.rotulo}>WhatsApp / Telefone</span>
-            <b>{TELEFONE_2}</b>
-            <span className={estilos.dica}>Canal alternativo</span>
           </a>
 
           <a className={estilos.canal} href={`mailto:${EMAIL}`}>
